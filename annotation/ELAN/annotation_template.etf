@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2025-09-12T12:15:09+03:00"
+    FORMAT="3.0" VERSION="3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds"/>
+    <TIME_ORDER/>
+    <TIER LINGUISTIC_TYPE_REF="Extra" TIER_ID="Extra"/>
+    <TIER LINGUISTIC_TYPE_REF="EDU" TIER_ID="EDU"/>
+    <TIER LINGUISTIC_TYPE_REF="Text" PARENT_REF="EDU" TIER_ID="Text"/>
+    <TIER LINGUISTIC_TYPE_REF="Words" PARENT_REF="Text" TIER_ID="Words"/>
+    <TIER LINGUISTIC_TYPE_REF="Pauses" TIER_ID="Pauses"/>
+    <TIER LINGUISTIC_TYPE_REF="Sounds" TIER_ID="Sounds"/>
+    <TIER LINGUISTIC_TYPE_REF="Interviewer" TIER_ID="Interviewer"/>
+    <TIER LINGUISTIC_TYPE_REF="Comments" PARENT_REF="EDU" TIER_ID="Comments"/>
+    <TIER LINGUISTIC_TYPE_REF="Questions" TIER_ID="Questions"/>
+    <TIER LINGUISTIC_TYPE_REF="HandGestures_Individual" TIER_ID="HandGestures_Individual"/>
+    <TIER LINGUISTIC_TYPE_REF="HandGestures_SpeechAligment" TIER_ID="HandGestures_SpeechAligment"/>
+    <TIER LINGUISTIC_TYPE_REF="StoryStructure_Gestures" TIER_ID="StoryStructure_Gestures"/>
+    <TIER LINGUISTIC_TYPE_REF="Connection_with_Structure"
+        PARENT_REF="StoryStructure_Gestures" TIER_ID="Connection_with_Structure"/>
+    <TIER LINGUISTIC_TYPE_REF="HeadGestures" TIER_ID="HeadGestures"/>
+    <TIER LINGUISTIC_TYPE_REF="GestureSpeech_Matching"
+        PARENT_REF="HeadGestures" TIER_ID="GestureSpeech_Matching"/>
+    <TIER LINGUISTIC_TYPE_REF="Posture" TIER_ID="Posture"/>
+    <TIER LINGUISTIC_TYPE_REF="OtherKinesicChannels" TIER_ID="OtherKinesicChannels"/>
+    <TIER LINGUISTIC_TYPE_REF="Synchronization_with_Addressee" TIER_ID="Synchronization_with_Addressee"/>
+    <TIER LINGUISTIC_TYPE_REF="EyeGaze" TIER_ID="EyeGaze"/>
+    <TIER LINGUISTIC_TYPE_REF="Adapters" TIER_ID="Adapters"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="Extra" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="EDU" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Text" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Words" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="Pauses" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="Sounds" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="Interviewer" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Comments" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="Questions" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="HandGestures_Individual"
+        GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="HandGestures_Individual" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE
+        CONTROLLED_VOCABULARY_REF="HandGestures_SpeechAligment"
+        GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="HandGestures_SpeechAligment" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="StoryStructure_Gestures"
+        GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="StoryStructure_Gestures" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        CONTROLLED_VOCABULARY_REF="Connection_with_Structure"
+        GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="Connection_with_Structure" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="Adapters"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Adapters" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="HeadGestures"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="HeadGestures" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision"
+        CONTROLLED_VOCABULARY_REF="GestureSpeech_Matching"
+        GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="GestureSpeech_Matching" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="EyeGaze"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="EyeGaze" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="Posture"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Posture" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="OtherKinesicChannels"
+        GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="OtherKinesicChannels" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE
+        CONTROLLED_VOCABULARY_REF="Synchronization_with_Addressee"
+        GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="Synchronization_with_Addressee" TIME_ALIGNABLE="true"/>
+    <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001"
+        LANG_ID="und" LANG_LABEL="undetermined (und)"/>
+    <CONSTRAINT
+        DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT
+        DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT
+        DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+    <CONTROLLED_VOCABULARY CV_ID="GestureSpeech_Matching">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_1aab67f7-6652-4491-a7c2-6426255a27a4">
+            <CVE_VALUE LANG_REF="und">да</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_28f1f67a-920f-4434-8625-efc9d00a27b9">
+            <CVE_VALUE LANG_REF="und">нет</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="HandGestures_Individual">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_47fc326e-f6ea-481e-a578-26cb7d414e98">
+            <CVE_VALUE DESCRIPTION="жесты трудностей с поиском слова" LANG_REF="und">вращение кисти вперед</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_58048353-3742-4ebb-8108-bfaed5a68d9b">
+            <CVE_VALUE
+                DESCRIPTION="снятие с себя ответственности за достоверность информации (не знаю, точно не смогу сказать)" LANG_REF="und">открытие ладони с пожиманием плечами</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_15819683-83a6-4303-96fc-cfcae5f42cbe">
+            <CVE_VALUE DESCRIPTION="просьба о внимании" LANG_REF="und">открытая ладонь вперед</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_1cf828d4-510f-40b4-9cbc-b9b378c2db70">
+            <CVE_VALUE DESCRIPTION="знак искренности" LANG_REF="und">ладонь к груди</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_6210dc4a-3266-407c-a8f5-b64ea03f2a49">
+            <CVE_VALUE DESCRIPTION="это не важно" LANG_REF="und">смести с поверхности</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_b1a9099d-5736-4994-a798-5f731a71ea1f">
+            <CVE_VALUE
+                DESCRIPTION="&quot;Указательный жест - коммуникативное (т.е. предназначенное для передачи информации) движение того или иного органа человеческого тела, обозначающее некоторый вектор, исходной точкой которого является точка местонахождения говорящего (субъекта указания); этот вектор обозначает определенное направление, точку расположения объекта указания и сам объект указания; указательный жест производится в интересах слушающего, т.е. направлен на привлечение его внимания (Kita 2003: 1)&quot;" LANG_REF="und">указательный жест</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_685194c1-780d-4680-ab1d-4cc4a062acae">
+            <CVE_VALUE
+                DESCRIPTION="Изобразительный ж. - сложный по форме и траектории, иллюстрирующий семантику пропозиции (напр. форму предмета)" LANG_REF="und">изобразительный жест</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="Connection_with_Structure">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_67f1aeb0-dc7e-451d-bbb2-942a4c167a9f">
+            <CVE_VALUE DESCRIPTION="жест связан со структурой рассказа" LANG_REF="und">да</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_25f70ee1-6211-4085-88da-f2c1ac37fd20">
+            <CVE_VALUE
+                DESCRIPTION="жест не связан со структурой рассказа" LANG_REF="und">нет</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="HeadGestures">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_0fa5c80d-2448-417d-b4e6-7cd6b8fef7e8">
+            <CVE_VALUE LANG_REF="und">кивки</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_1fcdced8-804b-4a84-b945-9eefe299ade7">
+            <CVE_VALUE LANG_REF="und">отрицательные покачивания</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_e9b233f6-1e00-4651-ac0e-e09b54aa0bb5">
+            <CVE_VALUE LANG_REF="und">голова развернута к адресату</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="Synchronization_with_Addressee">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_670fa1c5-0307-4616-856b-446055fbdeff">
+            <CVE_VALUE LANG_REF="und">наклон головы к адресату</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_1783ee2b-7ad8-4751-8b1f-ec3140c940d1">
+            <CVE_VALUE LANG_REF="und">наклон корпуса к адресату</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_bbca4e56-0cb5-4899-af9f-16654d1703f1">
+            <CVE_VALUE LANG_REF="und">движения рук к адресату</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_766f1ee7-85de-45aa-b739-8e2a8af0be01">
+            <CVE_VALUE LANG_REF="und">отстранение головы от адресата</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_5ceaea60-519f-45e9-8002-61b157f7af84">
+            <CVE_VALUE LANG_REF="und">отстранение корпуа от адресата</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_b5ebe584-3ec4-4959-9de5-f90e8ce6c2a2">
+            <CVE_VALUE LANG_REF="und">отстранение рук от адресата</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="HandGestures_SpeechAligment">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_18101c64-03d4-45e9-a7a3-901b6eace771">
+            <CVE_VALUE LANG_REF="und">жест для поиска слова</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_a1794a8c-3109-4909-8006-30eca13b27dc">
+            <CVE_VALUE
+                DESCRIPTION="приблизительность, когнитивный процесс" LANG_REF="und">вращение кисти / вращение кисти у головы</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_fe5bc9af-1b5a-4c8a-be71-4e00275dfb14">
+            <CVE_VALUE LANG_REF="und">жетсы на паузах и фальстартах</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="StoryStructure_Gestures">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_9571ea98-c83a-432a-aba8-4c4cc4893233">
+            <CVE_VALUE DESCRIPTION="назад или влево" LANG_REF="und">прошлое</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_25abb148-55fd-48e8-8f17-7bf1ce4153b7">
+            <CVE_VALUE DESCRIPTION="вниз, под ноги" LANG_REF="und">настоящее</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_66022070-863b-4742-9b82-6bf179e45381">
+            <CVE_VALUE DESCRIPTION="вперед или вправо" LANG_REF="und">будущее</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="OtherKinesicChannels">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_a24eb2a6-b570-4ca1-872e-6c392b2a5817">
+            <CVE_VALUE LANG_REF="und">движения ног</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_3b58a6eb-6a27-4da0-9ce4-2d6302c8203c">
+            <CVE_VALUE LANG_REF="und">движения корпуса</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_8a0afa5d-6cef-4811-bc21-73cce0ceb585">
+            <CVE_VALUE LANG_REF="und">движения плеч</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_b6f1f54c-fff1-4dad-a7ad-14d7b1e0013b">
+            <CVE_VALUE LANG_REF="und">движения в области рта</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_6007b01f-b28e-4ed0-a614-b8d56d7781b0">
+            <CVE_VALUE LANG_REF="und">движения в области носа</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="EyeGaze">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_708df251-513d-4b64-9945-7eacbb1ae805">
+            <CVE_VALUE LANG_REF="und">расслабленный, спокойный взгляд на адресата</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_554f54f6-61b2-4db7-97f9-1195a5293b9e">
+            <CVE_VALUE LANG_REF="und">расслабленный, спокойный взгляд в сторону от адресата</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_054c1406-945a-4345-973e-a1308a3d91c8">
+            <CVE_VALUE LANG_REF="und">намеренное избегание взгляда на адресата</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_882edc1b-923d-437e-a1bb-c828e8f94940">
+            <CVE_VALUE LANG_REF="und">намеренно упорный взгляд на адресата (staring)</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="Posture">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_c4a7d720-3259-4dd7-8971-68a19b5b9103">
+            <CVE_VALUE LANG_REF="und">смена позы</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="Adapters">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_e824b454-1acc-4f5f-9e25-8dbe9ee2a524">
+            <CVE_VALUE LANG_REF="und">рука/-и к голове</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_8f882975-ae14-4c7b-80fe-b0c8cb62d96d">
+            <CVE_VALUE LANG_REF="und">самоадаптеры</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_4145a328-e5c4-474e-841a-1f6b49d7cb28">
+            <CVE_VALUE LANG_REF="und">манипуляторы</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+</ANNOTATION_DOCUMENT>
